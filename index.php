@@ -22,7 +22,7 @@
         </ul>
 
         <form class="form-inline mt-4 justify-content-center">
-            <label class="sr-only" for="username">username</label>
+            <label class="sr-only" for="username">usernamee</label>
             <input type="text" class="form-control mb-2 mr-sm-2" id="username" placeholder="username">
 
             <label class="sr-only" for="gender">gender</label>
