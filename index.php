@@ -17,7 +17,7 @@
         <ul class="list-group">
             <li class="list-group-item">chat with other users about anything</li>
             <li class="list-group-item">invite users to have a private conversation</li>
-            <li class="list-group-item">see whos active and most likely to respond fast</li>
+            <li class="list-group-item">see whos active and most likely to respond faster</li>
             <li class="list-group-item">provide your gender <i><small>(optional)</small></i></li>
         </ul>
 
@@ -32,12 +32,15 @@
                 <option value="female">female</option>
             </select>
 
-            <button type="submit" class="btn btn-primary mb-2">JOIN Web-Chat !</button>
+            <button type="submit" class="btn btn-primary mb-2">JOIN NOW !</button>
         </form>
+
+        <div class="text-center mt-4 text-danger font-weight-bold"></div>
     </div>
 </div>
 
-    <script src="./jquery-3.5.1/jquery.min.js"></script>
-    <script src="./bootstrap-4.5.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./jquery-3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./bootstrap-4.5.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
