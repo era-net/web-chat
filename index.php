@@ -21,15 +21,19 @@
             <li class="list-group-item">provide your gender <i><small>(optional)</small></i></li>
         </ul>
 
-        <div class="justify-content-end">
-            <form class="form-inline">
-                <div class="form-group mx-sm-3 mb-2">
-                    <label for="inputPassword2" class="sr-only">Password</label>
-                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-            </form>
-        </div>
+        <form class="form-inline mt-4 justify-content-center">
+            <label class="sr-only" for="username">username</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="username" placeholder="username">
+
+            <label class="sr-only" for="gender">gender</label>
+            <select class="custom-select mb-2 mr-sm-2" id="gender">
+                <option selected>gender (optional)</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary mb-2">JOIN Web-Chat !</button>
+        </form>
     </div>
 </div>
 
