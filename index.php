@@ -24,7 +24,7 @@
 
         <form id="join-form" class="form-inline mt-4 justify-content-center">
             <label class="sr-only" for="username">username</label>
-            <input type="text" class="form-control mb-2 mr-sm-2" id="username" placeholder="username">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="username" placeholder="username" autocomplete="off">
 
             <label class="sr-only" for="gender">gender</label>
             <select class="custom-select mb-2 mr-sm-2" id="gender">

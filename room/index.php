@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION["username"]) && $_SESSION["started"]) {
+
+    include "../php/autoload.php";
+
+    $db = new DataController();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +15,12 @@
     <title>Chat room</title>
 </head>
 <body>
+    <a href="../quit/">quit session</a>
     <h2>Welcome to the chatting room :)</h2>
 </body>
 </html>
+<?php
+} else {
+    header("Location: ../");
+}
+?>
