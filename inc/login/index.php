@@ -15,6 +15,22 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     "status" => True,
                     "url" => "./room"
                 );
+
+                // user database connection
+                include "../../php/autoload.php";
+                $db = new DataController([
+                    "server" => $_MainDB["server"],
+                    "database" => $_MainDB["database"],
+                    "table" => $_MainDB["table"],
+                    "username" => $_MainDB["username"],
+                    "password" => $_MainDB["password"],
+                ]);
+
+                // user database insertion
+                $clbck = $db->insert(["username", "session_start", "last_activity", "current_activity", "present"],
+                            [$username, $_SESSION["started"], $_SESSION["started"], $_SESSION["started"], 1]);
+
+                $_SESSION["userId"] = $clbck["insertId"];
             } else {
                 $rsp = array(
                     "status" => False,

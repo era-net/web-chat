@@ -1,8 +1,8 @@
 <?php
 
-require_once "../../vendor/autoload.php";
+require realpath(__DIR__."../../../vendor/autoload.php");
 
-$dotenv = Dotenv\Dotenv::createImmutable("../../");
+$dotenv = Dotenv\Dotenv::createImmutable(realpath(__DIR__."../../../"));
 $dotenv->load();
 
 $_MainDB = [

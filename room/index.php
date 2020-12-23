@@ -1,11 +1,8 @@
 <?php
-    session_start();
+session_start();
 
-    if (isset($_SESSION["username"]) && $_SESSION["started"]) {
+if (isset($_SESSION["username"]) && $_SESSION["started"]) {
 
-    include "../php/autoload.php";
-
-    $db = new DataController();
 ?>
 <!DOCTYPE html>
 <html lang="en">
