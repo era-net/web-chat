@@ -10,6 +10,7 @@ if (isset($_SESSION["username"]) && $_SESSION["started"]) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../bootstrap-4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
 
     <title>Chat room</title>
 </head>
@@ -17,7 +18,7 @@ if (isset($_SESSION["username"]) && $_SESSION["started"]) {
     <a href="../quit/">quit session</a>
     <h2>Welcome to the chatting room :)</h2>
 
-    <div class="container border-top">
+    <div class="container border-top mt-5">
         <div class="row justify-content-md-center">
             <div class="col col-lg-2 px-3 py-3">
                 <div class="pt-2">hehe</div>
@@ -25,8 +26,11 @@ if (isset($_SESSION["username"]) && $_SESSION["started"]) {
                 <div class="pt-2">hoho</div>
             </div>
             <div class="col col-lg-2 border-left pl-5 py-3">
-                <div>
-                    chat...
+                <div class="chat-section">
+                    <div class="message">hehehehe</div>
+                    <div class="message">hehehehe</div>
+                    <div class="message">hehehehe</div>
+                    <div class="message">hehehehe</div>
                 </div>
                 <div>
                     <input type="text">
