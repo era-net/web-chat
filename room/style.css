@@ -1,4 +1,13 @@
 .chat-section {
-    padding: 18px;
-    background-color: grey;
+    padding: 12px 25px 18px 12px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.message-container {
+    margin-bottom: 50px;
+}
+
+.message-info {
+    text-align: right;
 }
