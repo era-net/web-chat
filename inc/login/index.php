@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 ]);
 
                 // user database insertion
-                $clbck = $db->insert(["username", "session_start", "last_activity", "current_activity", "present"],
-                            [$username, $_SESSION["started"], $_SESSION["started"], $_SESSION["started"], 1]);
+                $clbck = $db->insert(["username", "session_start", "last_activity", "current_activity", "present", "gender"],
+                                    [$username, $_SESSION["started"], $_SESSION["started"], $_SESSION["started"], 1, $_SESSION["gender"]]);
 
                 $_SESSION["userId"] = $clbck["insertId"];
             } else {
