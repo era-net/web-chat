@@ -15,8 +15,10 @@ if (isset($_SESSION["username"]) && $_SESSION["started"]) {
     <title>Chat room</title>
 </head>
 <body>
-    <a href="../quit/">quit session</a>
-    <h2>Welcome to the chatting room :)</h2>
+    <div class="page-header">
+        <a href="../quit/" class="float-right mr-3">quit session</a>
+        <h2 class="ml-3">Welcome to the chatting room :)</h2>
+    </div>
 
     <div class="container border-top mt-5">
         <div class="row justify-content-md-center">
@@ -64,7 +66,12 @@ if (isset($_SESSION["username"]) && $_SESSION["started"]) {
                     </div>
                 </div>
                 <div>
-                    <input type="text">
+                    <form>
+                        <div class="message-form-section">
+                            <div class="message-input-wrapper"><input type="text" class="message-form-input"></div>
+                            <div><button class="btn btn-sm btn-primary">send</button></div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
