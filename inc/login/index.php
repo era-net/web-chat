@@ -26,9 +26,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     "password" => $_MainDB["password"],
                 ]);
 
+                // user color
+                $uCol = "";
+                if ($gender === "male") {
+                    $uCol = "#4169e1";
+                } elseif ($gender === "female") {
+                    $uCol = "#cc66ff";
+                } else {
+                    $uCol = "#000000";
+                }
+
                 // user database insertion
-                $clbck = $db->insert(["username", "session_start", "last_activity", "current_activity", "present", "gender"],
-                                    [$username, $_SESSION["started"], $_SESSION["started"], $_SESSION["started"], 1, $_SESSION["gender"]]);
+                $clbck = $db->insert(["username", "session_start", "last_activity", "current_activity", "present", "gender", "color"],
+                                    [$username, $_SESSION["started"], $_SESSION["started"], $_SESSION["started"], 1, $_SESSION["gender"], $uCol]);
 
                 $_SESSION["userId"] = $clbck["insertId"];
             } else {

@@ -33,3 +33,22 @@
 .message-form-input {
     width: 80%;
 }
+
+.status-circle {
+    position: absolute;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    border: 0.5px solid #8a8a8a;
+}
+
+.status-active {
+    background-color: #adff2f;
+}
+.status-absent {
+    background-color: #f0e68c;
+}
+.status-offline {
+    background-color: #f08080;
+}

@@ -23,9 +23,9 @@ if (isset($_SESSION["username"]) && $_SESSION["started"]) {
     <div class="container border-top mt-5">
         <div class="row justify-content-md-center">
             <div class="col col-lg-2 px-3 py-3">
-                <div class="pt-2">hehe</div>
-                <div class="pt-2">haha</div>
-                <div class="pt-2">hoho</div>
+                <div class="pt-2">hehe <span class="status-circle status-active"></span></div>
+                <div class="pt-2">haha <span class="status-circle status-absent"></span></div>
+                <div class="pt-2">hoho <span class="status-circle status-offline"></span></div>
             </div>
             <div class="col border-left pl-5 py-3">
                 <div class="chat-section mb-2">
@@ -68,7 +68,7 @@ if (isset($_SESSION["username"]) && $_SESSION["started"]) {
                 <div>
                     <form>
                         <div class="message-form-section">
-                            <div class="message-input-wrapper"><input type="text" class="message-form-input"></div>
+                            <div class="message-input-wrapper"><input type="text" class="message-form-input" placeholder="message"></div>
                             <div><button class="btn btn-sm btn-primary">send</button></div>
                         </div>
                     </form>
