@@ -12,5 +12,3 @@ A simple chatting platform built with PHP for everyone to join.
 - [ ] chat backend
 - [ ] chat database
 - [ ] user invitations
-- hehe
-- - [ ] haha
