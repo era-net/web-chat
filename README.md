@@ -14,3 +14,8 @@ A simple chatting platform built with PHP for everyone to join.
 - [ ] user invitations
 - hehe
 - [ ] haha
+
+paragraph
+- hehe
+- haha
+- hoho
